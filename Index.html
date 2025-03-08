@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 50px;
+            background-color: rgb(162, 201, 235);
+
+        }
+
+        .container {
+            max-width: 200px;
+            background: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            margin: 20px;
+            size: 20px;
+            
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            color: #000000;
+            display: inline-block;
+            margin: 22px;
+            border-radius: 50px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #5100f4;
+            color: white;
+            padding: 15px;
+            border: 5px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 20px;
+            display: block;
+            
+        }
+
+
+        button:hover {
+            background: #00fc1d;
+        }
+
+        .Box {
+            display: flex;
+            justify-content: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 40px;
+            color: red;
+        }
+
+        .student-list {
+            max-height: 500px;
+            overflow-y: auto;
+            border: 1px solid #000000;
+            padding: 10px;
+            margin-top: 40px;
+            margin: 0px auto;
+            border-radius: 10px;
+            display: block;
+            border: #5100f4;
+            border-style: dashed;
+            border-radius: 20px;
+            max-width: 800px;
+        }
+
+        .student-record {
+            background: #f9f9f9;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            display: grid;
+            justify-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-size: large;
+
+            border-radius: 20px;
+        }
+          
+        .description {
+            display: flex;
+            font-weight: 300;
+            margin: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        
+    </style>    
+</head>
+
+<body>
+    <h1 class="Box"> STUDENT REGISTRATION FORM</h1>
+    <h2 class="description" >This is a the registration form for Delhi College, students who are interested in being a part of Delhi College and it's beautiful campus  can attach their name and further details in the given form below. Once we fetch your details, we will reach out to you soon on your email and phone number. </h2>
+
+
+
+
+
+    <div class="MainContainer">
+        <h2></h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input class="tel" type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <select name="gender" required>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="course">Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">Select Course</option>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="business">Business</option>
+                    <option value="arts">Arts</option>
+                    <option value="engineering">Engineering</option>
+                </select>
+            </div>
+
+
+
+
+
+            <button class="buttoninput" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
